@@ -8,7 +8,7 @@ def call(Map config=[:]){
     new File(currentdirectory.path+'/testoutput.txt').withWriter('utf-8')
     {
         writer ->
-          currentdirectory.eachFileRecurse(FileType.Any) {
+          currentdirectory.eachFileRecurse(FileType.ANY) {
               file -> 
               if (!file.isDirectory()) {
                   writer.writeLine(file.name + '\t'+ file.length())
