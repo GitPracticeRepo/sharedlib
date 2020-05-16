@@ -1,4 +1,3 @@
-@NonCPS
 def call(
     Map config=[
         giturl: 'https://github.com/GitPracticeRepo/multibranchspc.git', 
